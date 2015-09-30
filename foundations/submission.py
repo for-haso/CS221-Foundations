@@ -122,21 +122,20 @@ def computeLongestPalindrome(text):
     # BEGIN_YOUR_CODE (around 20 lines of code expected)
     # raise Exception("Not implemented yet")
     def isPalindrome(str):
-        return str == str[::-1]
+        if len(str) > 0:
+            return str == str[::-1]
+        else:
+            return False
 
-    ourList = []
-    palinList = []
-    for i in range(0,len(text)):
-        for elem in ourList:
-            word = elem + text[i]
-            ourList.append(word)
-            if isPalindrome(word):
-                palinList.append(word)
-        ourList.append(text[i])
-        palinList.append(text[i])
-    sorted(palinList, key=str.lower, reverse=True)
-    if len(palinList) > 0:
-        return len(palinList[0])
-    else:
-        return 0
+    def findPalindromes(str,index):
+        if isPalindrome(str):
+            return len(str)
+        elif index >= len(str):
+            return 0
+        else:
+            # Eiter remove a character or don't remove a character
+            smallerWord = str[0:index] + str[index+1:]
+            return max(findPalindromes(smallerWord,index),findPalindromes(str,index+1))
+    
+    return findPalindromes(text,0)
     # END_YOUR_CODE

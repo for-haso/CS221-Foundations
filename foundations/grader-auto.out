@@ -64,8 +64,8 @@
             'extraCredit': False,
             'maxPoints': 1,
             'maxSeconds': 1,
-            'messages': ['Time limit (1 seconds) exceeded.'],
+            'messages': [],
             'name': '3g-0',
-            'points': 0,
-            'seconds': 2}],
- 'totalPoints': 5}
+            'points': 1,
+            'seconds': 0}],
+ 'totalPoints': 6}
