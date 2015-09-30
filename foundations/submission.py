@@ -76,6 +76,9 @@ def incrementSparseVector(v1, scale, v2):
     """
     # BEGIN_YOUR_CODE (around 2 lines of code expected)
     # raise Exception("Not implemented yet")
+    for elem in v2:
+        v1[elem] = v1[elem] + scale*v2[elem]
+    return v1
     # END_YOUR_CODE
 
 ############################################################
