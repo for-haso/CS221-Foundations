@@ -58,7 +58,12 @@ def sparseVectorDotProduct(v1, v2):
     This function will be useful later for linear classifiers.
     """
     # BEGIN_YOUR_CODE (around 5 lines of code expected)
-    raise Exception("Not implemented yet")
+    # raise Exception("Not implemented yet")
+    inter = v1 & v2
+    result = 0
+    for elem in inter:
+        result = result + v1[elem]*v2[elem]
+    return result
     # END_YOUR_CODE
 
 ############################################################
