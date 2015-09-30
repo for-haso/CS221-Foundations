@@ -133,7 +133,7 @@ def computeLongestPalindrome(text):
         elif index >= len(str):
             return 0
         else:
-            # Eiter remove a character or don't remove a character
+            # Either remove a character or don't remove a character
             smallerWord = str[0:index] + str[index+1:]
             return max(findPalindromes(smallerWord,index),findPalindromes(str,index+1))
     
