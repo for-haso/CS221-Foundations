@@ -100,7 +100,7 @@ def computeMostFrequentWord(text):
     maxCount = countList[0][1]
     myList = []
     for elem in countList:
-        if elem[1] == 2:
+        if elem[1] == maxCount:
             myList.append(elem[0])
         else:
             break
