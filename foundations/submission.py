@@ -11,7 +11,8 @@ def computeMaxWordLength(text):
     You might find max() and list comprehensions handy here.
     """
     # BEGIN_YOUR_CODE (around 1 line of code expected)
-    raise Exception("Not implemented yet")
+    # raise Exception("Not implemented yet")
+    return max(sorted(text.split(' '), key=str.lower, reverse=True), key=len)
     # END_YOUR_CODE
 
 ############################################################
