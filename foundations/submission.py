@@ -75,7 +75,7 @@ def incrementSparseVector(v1, scale, v2):
     This function will be useful later for linear classifiers.
     """
     # BEGIN_YOUR_CODE (around 2 lines of code expected)
-    raise Exception("Not implemented yet")
+    # raise Exception("Not implemented yet")
     # END_YOUR_CODE
 
 ############################################################
