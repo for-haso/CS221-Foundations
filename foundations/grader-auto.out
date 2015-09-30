@@ -6,9 +6,9 @@
             'extraCredit': False,
             'maxPoints': 1,
             'maxSeconds': 1,
-            'messages': ["File 'writeup.pdf' does not exist"],
+            'messages': [],
             'name': 'writeupValid',
-            'points': 0,
+            'points': 1,
             'seconds': 0},
            {'description': '',
             'extraCredit': False,
@@ -68,4 +68,4 @@
             'name': '3g-0',
             'points': 1,
             'seconds': 0}],
- 'totalPoints': 6}
+ 'totalPoints': 7}
