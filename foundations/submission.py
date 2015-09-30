@@ -120,5 +120,23 @@ def computeLongestPalindrome(text):
     You should first define a recurrence before you start coding.
     """
     # BEGIN_YOUR_CODE (around 20 lines of code expected)
-    raise Exception("Not implemented yet")
+    # raise Exception("Not implemented yet")
+    def isPalindrome(str):
+        return str == str[::-1]
+
+    ourList = []
+    palinList = []
+    for i in range(0,len(text)):
+        for elem in ourList:
+            word = elem + text[i]
+            ourList.append(word)
+            if isPalindrome(word):
+                palinList.append(word)
+        ourList.append(text[i])
+        palinList.append(text[i])
+    sorted(palinList, key=str.lower, reverse=True)
+    if len(palinList) > 0:
+        return len(palinList[0])
+    else:
+        return 0
     # END_YOUR_CODE

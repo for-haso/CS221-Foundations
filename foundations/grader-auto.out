@@ -64,10 +64,8 @@
             'extraCredit': False,
             'maxPoints': 1,
             'maxSeconds': 1,
-            'messages': ["Exception thrown: <type 'exceptions.Exception'> -- Not implemented yet",
-                         '  File "grader.py", line 66, in test3g\n    grader.requireIsEqual(0, submission.computeLongestPalindrome(""))\n',
-                         '  File "/home/cleophus/Code/school/CS221/homework1/foundations/submission.py", line 123, in computeLongestPalindrome\n    raise Exception("Not implemented yet")\n'],
+            'messages': ['Time limit (1 seconds) exceeded.'],
             'name': '3g-0',
             'points': 0,
-            'seconds': 0}],
+            'seconds': 2}],
  'totalPoints': 5}
