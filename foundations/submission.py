@@ -24,7 +24,9 @@ def manhattanDistance(loc1, loc2):
     are pairs of numbers (e.g., (3, 5)).
     """
     # BEGIN_YOUR_CODE (around 1 line of code expected)
-    raise Exception("Not implemented yet")
+    # raise Exception("Not implemented yet")
+    # Manhattan Distance = |x1 - x2| + |y1 - y2|
+    return abs(loc1[0] - loc2[0]) + abs(loc1[1] - loc2[1])
     # END_YOUR_CODE
 
 ############################################################
