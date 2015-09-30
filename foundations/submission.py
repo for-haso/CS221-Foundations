@@ -93,7 +93,18 @@ def computeMostFrequentWord(text):
     You might find it useful to use collections.Counter().
     """
     # BEGIN_YOUR_CODE (around 5 lines of code expected)
-    raise Exception("Not implemented yet")
+    # raise Exception("Not implemented yet")
+    words = text.split(' ')
+    counter = collections.Counter(words)
+    countList = counter.most_common()
+    maxCount = countList[0][1]
+    myList = []
+    for elem in countList:
+        if elem[1] == 2:
+            myList.append(elem[0])
+        else:
+            break
+    return (set(myList),maxCount)
     # END_YOUR_CODE
 
 ############################################################
